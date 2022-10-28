@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomina</title>
+    <link rel="stylesheet" href="Nomina.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <label class="subtitle">Datos</label>
+            <label for="input1">Cargo:</label>
+            <select id="input1">
+                <option value="director">director</option>
+                <option value="gerente">gerente</option>
+                <option value="empleado">empleado</option>
+            </select>
+            <label for="input1">Nombre:</label>
+            <input onfocus="this.value=''" type="text" id="input2">
+            <label for="input3">Apellido:</label>
+            <input onfocus="this.value=''" type="text" id="input3">
+            <label for="input4">Cedula:</label>
+            <input onfocus="this.value=''" type="text" id="input4">
+            
+            <label for="input5">Tipo:</label>
+            <select id="input5">
+                <option value="bonificacion">bonificacion</option>
+                <option value="deduccion">deduccion</option>
+            </select>
+            <div><br></div>
+            <button onclick="proc()" id="btn">Submit</button>
+            <button onclick="show()" id="btn">Show Data</button>
+        </div>
+    </div>
+    <script src="Nomina.js"></script>
+</body>
+</html>

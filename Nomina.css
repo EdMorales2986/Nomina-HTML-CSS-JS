@@ -1,0 +1,57 @@
+body {
+    color: whitesmoke;
+    background-color: #252525;
+}
+
+label {
+    text-align: right;
+}
+
+.subtitle {
+    text-align: center;
+    grid-column: span 2;
+    font-size: 28px;
+}
+
+.container {
+    display: flex; 
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+
+.box {
+    height: auto;
+    width: auto;
+    display: grid;
+    background-color: seagreen;
+    border: 8px solid whitesmoke;
+    text-align: center;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(9, auto);
+    border-radius: 35px;
+    padding: 25px;
+}
+
+.showbox {
+    height: auto;
+    width: auto;
+    display: grid;
+    background-color: coral;
+    border: 8px solid whitesmoke;
+    text-align: center;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(auto, 25px);
+    border-radius: 35px;
+    padding: 25px;
+}
+
+#btn {
+    cursor:pointer;
+    color: whitesmoke;
+    background-color: seagreen;
+    border: 1px solid whitesmoke;
+    grid-column: span 2;
+}
